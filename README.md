@@ -1,4 +1,4 @@
-# FRQ - NFL Quiz Trivia Website
+# 🏈: FRQ - NFL Quiz Trivia Website
 
 Welcome to **FRQ**, an interactive website featuring multiple quiz-style games related to the NFL. This project is designed to test your knowledge of NFL players and teams through engaging gameplay. Below is an overview of the games included in this project, as well as information about the accompanying assets.
 
