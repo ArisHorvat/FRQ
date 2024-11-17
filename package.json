@@ -1,0 +1,15 @@
+{
+  "name": "frq",
+  "version": "1.0.0",
+  "main": "launcher.js",
+  "scripts": {
+    "start": "node launcher.js"
+  },
+  "author": "Horvat Aris",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "open": "^10.1.0",
+    "http-server": "^14.0.0"
+  }
+}

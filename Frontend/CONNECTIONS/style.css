@@ -1,0 +1,193 @@
+html,body {
+    background: #1f123a;
+}
+
+
+/* Container */
+
+.container{
+    display: block;
+}
+
+.blurred{
+    filter: blur(5px);
+}
+
+
+/* Pop-up */
+
+.popup{
+    width: 400px;
+    height: 330px;
+
+    background: white;
+    color: black;
+
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 0 30px 30px;
+
+    text-align: center;
+    visibility: hidden;
+
+    border-radius: 7%;
+    border: 2px black solid;
+}
+
+.popup.show{
+    visibility: visible;
+}
+
+.closePopup{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+
+    padding: 0 40px 40px 0;
+
+    color:transparent;
+    border: 0px;
+
+    top: 2px;
+    right: 8px;
+}
+
+#board{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 7px;
+    
+    width: 100%;
+    height: 100%    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+.box {
+    width: 110px;
+    height: 95px;
+    
+    border: 4px solid black;
+    border-radius: 20%;
+    margin: 4px;
+    
+    color: transparent;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    
+    text-transform: uppercase;
+    display: grid;
+
+    place-items: center;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 13px;
+}
+
+.box.selected{
+    background-color: grey;
+}
+
+.box.right{
+    width: 452px;
+    height: 90px;
+
+    color: black;
+    
+    border-radius: 0%;
+
+    background-color: green;
+
+    font-size: 2.4rem;
+}
+
+@keyframes rightGuess {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.mistakeCounter{
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.mistakeText{
+    width: fit-content;
+    height: 20px;
+
+    font-size: 20px;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mistakeBox{
+    width: 15px;
+    height: 15px;
+    
+    border: 4px solid black;
+    border-radius: 50%;
+    margin: 4px;
+    
+    color: black;
+    
+    text-transform: uppercase;
+    display: grid;
+
+    margin-top: 8px;
+}
+
+.divButtons{
+    margin-top: 10px;
+}
+
+.buttonGuess{
+    width: 70px;
+    height: 30px;
+    margin: 0 20px 0 0;
+
+    border-radius: 30%;
+    border: 2px black solid;
+}
+
+.buttonGiveUp{
+    width: fit-content;
+    height: 25px;
+    border-radius: 30%;
+    border: 2px black solid;
+}
+
+.buttonShow{
+    width: fit-content;
+    height: 30px;
+    margin: 0 0 0 20px;
+
+    border-radius: 30%;
+    border: 2px black solid;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+        <img src="../frq1.png"; width="70px">
+        <hr>
+    <div class="container" id="container">    
+        <div id="board"></div>
+
+        <div class="keyboard">
+            <div class="row one">
+                <button id="q" class="key">Q</button>
+                <button id="w" class="key">W</button>
+                <button id="e" class="key">E</button>
+                <button id="r" class="key">R</button>
+                <button id="t" class="key">T</button>
+                <button id="y" class="key">Y</button>
+                <button id="u" class="key">U</button>
+                <button id="i" class="key">I</button>
+                <button id="o" class="key">O</button>
+                <button id="p" class="key">P</button>
+            </div>
+            <div class="row two">
+                <button id="a" class="key">A</button>
+                <button id="s" class="key">S</button>
+                <button id="d" class="key">D</button>
+                <button id="f" class="key">F</button>
+                <button id="g" class="key">G</button>
+                <button id="h" class="key">H</button>
+                <button id="j" class="key">J</button>
+                <button id="k" class="key">K</button>
+                <button id="l" class="key">L</button>
+            </div>
+            <div class="row three">
+                <button id="delete" class="otherKey">Delete</button>
+                <button id="z" class="key">Z</button>
+                <button id="x" class="key">X</button>
+                <button id="c" class="key">C</button>
+                <button id="v" class="key">V</button>
+                <button id="b" class="key">B</button>
+                <button id="n" class="key">N</button>
+                <button id="m" class="key">M</button>
+                <button id="enter" class="otherKey">Enter</button>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </div>
+    <hr>
+
+    <div class="popup" id="popup">
+        <button class="closePopup" id="closePopup"><i class="material-icons" style="cursor:pointer;font-size:45px;color:red">cancel</i></button>
+        <h1 id="resultMessage">Message</h1>
+        <div id="playerJersey" class="jersey"></div>
+    </div>
+</body>
+
+</html>
